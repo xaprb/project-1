@@ -1,0 +1,11 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Project One"
+theme = "project-1"
+
+[params]
+    description = "Project One"
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
