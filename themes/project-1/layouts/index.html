@@ -2,9 +2,9 @@
 
 <main>
     <div class="intro">
-        <h1>{{ .Site.Title }}</h1>
-        <h2>{{ markdownify .Site.Params.Description }}</h2>
-        {{ with .Content }} <div class="homepage-content text-justify">{{ . }}</div> {{ end }}
+        <div class="homepage-content text-justify">
+            <p>This is a website. You can look at <a href="census">census</a>.</p>
+        </div>
     </div>
 </main>
 
