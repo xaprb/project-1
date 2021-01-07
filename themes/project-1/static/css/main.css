@@ -5,7 +5,6 @@ html, body {
 body {
     padding-top: 55px;
     display: flex;
-    text-align: center;
     flex-direction: column;
 }
 

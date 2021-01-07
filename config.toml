@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Project One"
 theme = "project-1"
 paginate = 50
+sectionPagesMenu = "main"
+
 
 [params]
     description = "Project One"

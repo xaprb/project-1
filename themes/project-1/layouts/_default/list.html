@@ -2,9 +2,13 @@
 
 <main>
 
-    <h2>{{ .Title }}</h2>
+    <h2>{{ .Title | humanize | title }}</h2>
 
-    {{ range .Paginator.Pages }} {{ partial "list-item" . }} {{ end }}
+    <ul>
+    {{ range .Paginator.Pages }}
+    <li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
 
 </main>
 
