@@ -4,17 +4,25 @@
 
     <div>
         <h2>{{ .Title }}</h2>
-        <h5>{{ .Description }}</h5>
     </div>
 
-    <div align="start" class="content">{{ .Content }}</div>
+    <div align="start" class="content">{{ .Content }}
 
-    <table>
-    {{ range $k, $v := .Params }}
-    <tr><td>{{ $k }}</td><td>{{ $v }}</td></tr>
-    {{ end }}
-    </table>
+        <table>
+        {{ range $k, $v := .Params.kv }}
+        <tr><td>{{ $k }}</td><td>{{ $v }}</td></tr>
+        {{ end }}
+        </table>
 
+        {{ if .Params.pcb }}
+        <h4>Related Records</h4>
+        <ul>
+            {{ range (.GetTerms "pcb") }}
+                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+           {{ end }}
+        </ul>
+        {{ end }}
+    </div>
 </main>
 
 {{ partial "footer" . }}

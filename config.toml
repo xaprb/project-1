@@ -12,3 +12,6 @@ sectionPagesMenu = "main"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
+
+[taxonomies]
+    pcb = "pcb"
