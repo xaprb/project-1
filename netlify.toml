@@ -1,2 +1,2 @@
 [build]
-  environment = { PYTHON_VERSION = "3.7", HUGO_VERSION = "0.80" }
+  environment = { PYTHON_VERSION = "3.7", HUGO_VERSION = "0.80.0" }
