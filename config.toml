@@ -1,4 +1,4 @@
-baseURL = "http://example.com/"
+baseURL = "https://jovial-goodall-56785c.netlify.app/"
 languageCode = "en-us"
 title = "Project One"
 theme = "project-1"
