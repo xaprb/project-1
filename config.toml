@@ -15,3 +15,11 @@ sectionPagesMenu = "main"
 
 [taxonomies]
     pcb = "pcb"
+
+
+[outputs]
+  home = ["HTML", "JSON"]
+  page = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  taxonomyTerm = ["HTML"]
